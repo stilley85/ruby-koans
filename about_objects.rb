@@ -21,7 +21,7 @@ class AboutObjects < Neo::Koan
 
   def test_every_object_has_an_id
     obj = Object.new
-    assert_equal Fixnum, obj.object_id.class
+    assert_equal Integer, obj.object_id.class
     # Fixnum and Bignum are gone as of Ruby 2.4, there is only Integer.
   end
 
